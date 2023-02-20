@@ -1,0 +1,5 @@
+name: 'Jekyll Actions'
+description: 'A GitHub Action to build and publish Jekyll sites to GitHub Pages'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
