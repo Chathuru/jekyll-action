@@ -1,5 +1,12 @@
 name: 'Jekyll Actions'
 description: 'A GitHub Action to build and publish Jekyll sites to GitHub Pages'
+inputs:
+  config-files:
+    description: 'Specify config file'
+    required: false
+    default: '_config.yml'
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args:
+    - ${{ inputs.config-files }}
